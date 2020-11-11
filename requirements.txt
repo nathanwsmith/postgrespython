@@ -1,3 +1,3 @@
 psycopg2
 kafka-python>=2.0.1
-libpq.a
+libpq
