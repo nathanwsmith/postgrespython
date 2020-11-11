@@ -19,10 +19,11 @@ from kafka import KafkaConsumer
 import consume
 
 
-def main ():
+    def main ():
 
-    print("Starting Main")
-    consume.main()
+        print("Starting Main")
+        consume.main()
+
     return None
 
 if __name__ == '__main__' : main()
