@@ -21,8 +21,8 @@ import consume
 
 def main ():
 
-        print("Starting Main")
-        consume.main()
+    print("Starting Main")
+    consume.main()
 
     return None
 
