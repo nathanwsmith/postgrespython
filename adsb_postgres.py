@@ -1,5 +1,5 @@
 import psycopg2
-
+from pscopg2 import Error
 
 def testdbconnection():
     '''
