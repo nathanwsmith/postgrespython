@@ -20,7 +20,6 @@ import adsb_postgres
 import consume
 
 
-
 def main ():
 
     print("Starting Main")
