@@ -2,9 +2,9 @@
 Module Summary:
  -Stores adsb stream data in a postgresql database
 Inputs:
- -
+ - a
 Outputs:
- -
+ - b
 Author:
  - Nathan Smith : nathan.smith11@baesystems.com
 Team:

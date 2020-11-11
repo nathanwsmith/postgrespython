@@ -83,7 +83,8 @@ def tablewrite():
        
         # Loop over each individual entry, i.e icao24 ID
         for entry in output_dict:
-            print("Made it to the FOR LOOP!")
+            print('PostgreSQL database version:')
+            curr.execute('SELECT version()')
             my_id = entry
             my_lat = output_dict[entry]['lat']
             my_lon = output_dict[entry]['lon']
