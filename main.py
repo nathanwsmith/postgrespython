@@ -16,10 +16,12 @@ Date:
 import json
 from kafka import KafkaConsumer
 import adsb_postgres
+import consume
 
 def main ():
 
-
+    print("Starting Main")
+    adsb_postgres.testdbconnection()
     return None
 
 if __name__ == '__main__' : main()
