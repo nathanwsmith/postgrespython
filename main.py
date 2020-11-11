@@ -18,13 +18,13 @@ import psycopg2
 from kafka import KafkaConsumer
 import adsb_postgres
 import consume
-from pscopg2 import Error
+
 
 
 def main ():
 
     print("Starting Main")
-    adsb_postgres.testdbconnection()
+    consume.main()
     return None
 
 if __name__ == '__main__' : main()

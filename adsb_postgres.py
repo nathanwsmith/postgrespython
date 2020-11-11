@@ -1,5 +1,6 @@
 import psycopg2
-from psycopg2 import Error
+import time
+from opensky_api import OpenSkyApi
 
 def testdbconnection():
     '''
