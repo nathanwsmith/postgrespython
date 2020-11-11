@@ -7,7 +7,7 @@ def testdbconnection():
             -Tests the connection to the PostgreSQL database and prints connection properties
     '''
     try:
-
+        print("Starting...")
         connection = psycopg2.connect(user = "futurecapability",
                                     password = "BAECommTech1",
                                     host = "10.72.124.159",
