@@ -89,12 +89,13 @@ def tablewrite():
             my_id = entry
             my_lat = output_dict[entry]['lat']
             my_lon = output_dict[entry]['lon']
+            if (output_dict[entry]['lat'] is not None) and (output_dict[entry]['lon'] is not None):
 
-            # And write to postgres
-            query = '''INSERT INTO public.adsb (icao_id, lat, lon) VALUES('%s' ,'%s' ,'%s' );''' % (my_id, str(my_lat), str(my_lon))
-            curr.execute(query)
-            conn.commit()
-            print("Records inserted ...")
+                # And write to postgres
+                query = '''INSERT INTO public.adsb (icao_id, lat, lon) VALUES('%s' ,'%s' ,'%s' );''' % (my_id, str(my_lat), str(my_lon))
+                curr.execute(query)
+                conn.commit()
+                print("Records inserted ...")
 
         print("Awaiting new data ...")
         # result = curr.fetchone()
