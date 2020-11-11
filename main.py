@@ -17,6 +17,7 @@ import json
 from kafka import KafkaConsumer
 import adsb_postgres
 import consume
+import libpq
 
 def main ():
 
