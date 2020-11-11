@@ -1,5 +1,6 @@
 import json
 from kafka import KafkaConsumer
+import psycopg2
 
 
 def format_dict():
@@ -74,7 +75,7 @@ def tablewrite():
   
 
         try:
-            conn = psycopg2.connect(database="adsb_data", user='futurecapability', password='BAECommTech1')
+            conn = psycopg2.connect(host = "172.21.190.154", port = "5432", database="adsb_data", user='futurecapability', password='BAECommTech1')
             curr = conn.cursor()
         except:
             print("Could not connect")
