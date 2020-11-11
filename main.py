@@ -17,7 +17,7 @@ import json
 import psycopg2
 from kafka import KafkaConsumer
 import consume
-
+from consume import tablewrite
 
 def main ():
 
