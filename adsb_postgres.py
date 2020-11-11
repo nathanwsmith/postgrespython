@@ -12,7 +12,7 @@ def testdbconnection():
                                     password = "BAECommTech1",
                                     host = "172.21.190.154",
                                     port = "5432",
-                                    database = "adsb_stream")
+                                    database = "adsb_data")
 
         cursor = connection.cursor()
         # Print PostgreSQL Connection properties
