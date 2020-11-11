@@ -8,11 +8,7 @@ def testdbconnection():
     '''
     try:
         print("Starting...")
-        connection = psycopg2.connect(user = "futurecapability",
-                                    password = "BAECommTech1",
-                                    host = "172.21.190.154",
-                                    port = "5432",
-                                    database = "adsb_data")
+        connection = psycopg2.connect(user = "futurecapability", password = "BAECommTech1", host = "172.21.190.154", port = "5432", database = "adsb_data")
 
         cursor = connection.cursor()
         # Print PostgreSQL Connection properties
