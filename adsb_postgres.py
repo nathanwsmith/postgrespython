@@ -1,5 +1,5 @@
 import psycopg2
-import libpq-dev
+import libpq.a
 
 def testdbconnection():
     '''

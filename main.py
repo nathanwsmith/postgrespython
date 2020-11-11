@@ -18,7 +18,7 @@ import psycopg2
 from kafka import KafkaConsumer
 import adsb_postgres
 import consume
-import libpq-dev
+import libpq.a
 
 def main ():
 
