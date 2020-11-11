@@ -16,7 +16,6 @@ Date:
 import json
 import psycopg2
 from kafka import KafkaConsumer
-import adsb_postgres
 import consume
 
 
