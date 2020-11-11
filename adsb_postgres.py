@@ -10,7 +10,7 @@ def testdbconnection():
         print("Starting...")
         connection = psycopg2.connect(user = "futurecapability",
                                     password = "BAECommTech1",
-                                    host = "10.72.124.159",
+                                    host = "172.21.190.154",
                                     port = "5432",
                                     database = "adsb_stream")
 
