@@ -24,7 +24,7 @@ def print_nicely(my_dict):
     return None
 
 
-def main():
+def tablewrite():
 
     consumer = KafkaConsumer('adsb-data', bootstrap_servers=['my-cluster-kafka-bootstrap:9092'], auto_offset_reset='earliest')
 

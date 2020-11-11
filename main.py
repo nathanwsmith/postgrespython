@@ -22,7 +22,7 @@ import consume
 def main ():
 
     print("Starting Main")
-    consume.main()
+    consume.tablewrite()
 
     return None
 
