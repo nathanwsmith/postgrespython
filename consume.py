@@ -85,12 +85,13 @@ def tablewrite():
         for entry in output_dict:
             print('PostgreSQL database version:')
             curr.execute('SELECT version()')
+            print(curr.fetchall())
             my_id = entry
             my_lat = output_dict[entry]['lat']
             my_lon = output_dict[entry]['lon']
 
             # And write to postgres
-            query = "INSERT INTO public.adsb(icao_id, lat, lon) VALUES('%s', '%s', '%s')" % (my_id, str(my_lat), str(my_lon))
+            query = "INSERT INTO public.adsb(icao_id, lat, lon) VALUES(%s, %s, %s)" % (my_id, str(my_lat), str(my_lon))
             curr.execute(query)
             conn.commit()
             print("Records inserted ...")
